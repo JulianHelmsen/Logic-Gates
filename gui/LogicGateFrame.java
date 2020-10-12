@@ -37,7 +37,6 @@ public class LogicGateFrame implements Renderable, State {
 		for(int i = 0; i < this.dependencies.size(); i++) {
 			this.gate.setPin(i, this.dependencies.get(i).getOutput());
 		}
-		System.out.println();
 		return this.gate.getOutput();
 	}
 	
